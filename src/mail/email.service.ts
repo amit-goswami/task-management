@@ -14,6 +14,16 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// For gmail
+// const transporter = nodemailer.createTransport({
+//   service: process.env.EMAIL_SERVICE,
+//   host: process.env.EMAIL_HOST,
+//   auth: {
+//     user: process.env.EMAIL_USER,
+//     pass: process.env.EMAIL_PASS,
+//   },
+// });
+
 export enum EMAIL_ERROR_NAME {
   EMAIL_SENDING_FAILED = "EMAIL_SENDING_FAILED",
 }
